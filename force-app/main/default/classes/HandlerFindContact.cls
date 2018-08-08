@@ -3,7 +3,7 @@ public with sharing class HandlerFindContact implements BotHandler {
     public BotResponse handle(String utterance, String[] params, Map<String, String> session, String fileName, String fileContent) {
         String key = '%' + params[0] + '%';
         List<Contact> contacts = 
-            [SELECT Id, Name, MobilePhone FROM Contact
+            [SELECT Id, Name, MobilePhone,fax FROM Contact
              WHERE Name LIKE :key
              ORDER BY Name
              LIMIT 5];
