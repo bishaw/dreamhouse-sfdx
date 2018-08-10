@@ -64,6 +64,8 @@ public class HandlerFindProperties implements BotHandler {
         } else {
             return new BotResponse(new BotMessage('Bot', 'Sorry, I don\'t know how to handle that'));
         }
+
+        //This comment has been added for demo.
     }
     
 }
