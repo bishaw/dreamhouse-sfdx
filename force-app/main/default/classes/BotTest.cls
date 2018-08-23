@@ -131,6 +131,7 @@ public class BotTest {
         BotHandler handler = new HandlerNext();
         BotResponse response = handler.handle('', null, null, null, null);
         System.assert(response.messages.size() > 1);
+        //comment added for demo
     }
 
     static testMethod void testSOQL() {
